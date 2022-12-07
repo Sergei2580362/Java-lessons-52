@@ -11,7 +11,7 @@ public class Flower {
         this.size = size;
         this.hight = hight;
     }
-}
+
 
     public Flower(int size, int hight) {
         this.size = size;

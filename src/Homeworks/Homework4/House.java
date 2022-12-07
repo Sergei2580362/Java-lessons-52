@@ -10,6 +10,7 @@ public class House {
     private String address;
     int hight;
     String owner;
+    public int high;
 
     public House(int length, int width, int hight, String address, String owner) {
         this.length = length;
@@ -23,7 +24,7 @@ public class House {
         this.address = address;
         this.length = length;
         this.width = width;
-    }
+     }
 
     public int build(int high) {
         this.high = high;
