@@ -4,15 +4,14 @@ import java.util.Random;
 
 public class MethodTest {
     public static void main(String[] args) {
-        //System.out.println(getRandomStudent());
-
-        int i = 3;
-        int j = 4;
-        swap(i, j);
-        System.out.println(i);
-        System.out.println(j);
-
+        System.out.println(getRandomStudent());
     }
+
+    //    int i = 3;
+    //    int j = 4;
+    //    swap(i, j);
+    //    System.out.println(i);
+    //    System.out.println(j);
 
     // метод выбора студента
 
