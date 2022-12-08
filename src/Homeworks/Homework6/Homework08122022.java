@@ -15,13 +15,29 @@ public class Homework08122022 {
         int a = 5;
         int b = 10;
         System.out.println("Второе число больше чем первое?");
-        System.out.println(b>=a);
+        System.out.println(b >= a);
 
+        // #2
+        boolean res = isMoreOrEqual(5, 6);
+        System.out.println(res);
+        // #3
+        System.out.println(smartConcat("привет", "цветок"));
+    }
+        
+        public static boolean isMoreOrEqual(int first, int second) {
+            return first >= second;
+        }
 
         // #3
-        String word1 = "привет";
-        String word2 = "цветок";
-        System.out.println(word1.substring(0,3)+word2.substring(3,6)); //));
+        //String word1 = "привет";
+        //String word2 = "цветок";
+        //System.out.println(word1.substring(0,3)+word2.substring(3,6)); //));
+
+        public static String smartConcat(String str1, String str2) {
+             String f = str1.substring(0,str1.length()/2);
+             String s = str2.substring(str2.length()/2);
+             return f + s;
     }
+
 
 }
