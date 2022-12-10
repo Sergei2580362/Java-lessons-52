@@ -5,7 +5,7 @@ public class CalcTest {
     //    Dog sharik = null;
     //    sharik = new Dog("sarik sharikovich");
         Calculator calc = new Calculator();
-        int sum = calc.sum(5, 6);
+        int sum = calc.sum(5, 7);
         System.out.println(sum);
         int minus = calc.minus(10, 3);
         System.out.println(minus);
