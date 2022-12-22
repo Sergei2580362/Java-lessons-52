@@ -54,9 +54,42 @@ public class Hmw1612Lev2 {
         // подсказка: используйте for чтобы пройтись по номеру символа, используйте метод length() у строки чтобы
         // пройтись по каждому символу, метод charAt() чтобы достать символ на определенной позиции и метод
         // Integer.parseInt() чтобы перевести в int
+
+        System.out.println("------");
+        System.out.println("Task 4");
+        String s = "523";
+        int sum1 = 0;
+        for (int i = 0; i < s.length(); i++) {
+            int val = Integer.valueOf(s.charAt(i));
+            sum1 += val;
+        }
+        System.out.println(sum1);
+
+        //}
+        
         // 5) Дана строка из 6-ти цифр. Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр.
         // Если это так - выведите 'да', в противном случае выведите 'нет'.
         // в данной задаче нужно использовать 2 сумматора и дополнительно метод if чтобы проверить когда нам нужно
         // складывать к первому сумматору, а когда ко второму
+
+        System.out.println("------");
+        System.out.println("Task 5");
+        String s2 = "123456";
+        int sum2 = 0;
+        int sum3 = 0;
+        for (int i = 0; i < s2.length() /2; i++) {
+            int val2 = Integer.valueOf(s2.charAt(i));
+            sum2 += val2;
+        }
+
+        for (int i = s2.length()/2; i < s2.length(); i++) {
+            int val2 = Integer.valueOf(s2.charAt(i));
+            sum3 += val2;
+        }
+        if(sum3 == sum2) {
+            System.out.println("да " + sum2 + " равно " + sum3);
+        } else {
+            System.out.println("нет " + sum2 + " не равно " + sum3);
+        }
     }
 }

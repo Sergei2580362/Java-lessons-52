@@ -18,18 +18,23 @@ public class Hmw1612 {
         int year2 = scan.nextInt();
         int count = 0;
         for (int i = year1; i < year2; i++) {
-            if (i % 4 == 0) {
-                count++;
+            if (i % 4 == 0) { // либо вместо этого метод!!! -> if (isLeapYear(i)_ {
+                count++;      // -> sum++;
             }
         }
         System.out.println("Количество високосных годов в период " + year1 + "-" + year2 + " -> " + count);
+
+        // и сам метод!!!:
+        // private static boolean isLeapYear(int i) {
+        // return i % 4 == 0;
+        // }
 
         // 2) Вывести на консоль те двузначные числа которые делятся на 4, но не делятся на 6.
 
         System.out.println("------");
         System.out.println("Task 2");
         for (int i = 0; i < 100; i++) {
-            if (i % 4 == 0 && i % 6 != 0) { // делится на 4 и не делится на 6
+            if (i % 4 == 10 && i % 6 != 0) { // делится на 4 и не делится на 6
                 System.out.println(i);
             }
         }
@@ -45,6 +50,7 @@ public class Hmw1612 {
             }
         }
         System.out.println("Sum: " + sum);
+
 
         // 5) Вывести на консоль числа от -10 до -40.
 
@@ -62,6 +68,12 @@ public class Hmw1612 {
             if (i % 13 == 0) {
                 result = i * i;
                 System.out.println(result);
+
+                // метод 2
+                 /*for ( int i = 13; i < 100; i +=13) {
+                 if (i % 2 !=0) {
+                 }
+                 }*/
             }
         }
 
@@ -109,5 +121,30 @@ public class Hmw1612 {
         } else {
             System.out.println(num3 + "-> число простое");
         }
+
+        // Вариант №2 через метод !!!
+
+        /*static boolean isNumberSimple(int number) {
+            for (int i = 2; i <= number /2; i++) { // "number /2" - так нет смысла проверять 10/6
+                if (number % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }*/
+
+
     }
+
+    int i1 = 2;
+    int i2 = 5;
+    int i3 = 6;
+    int i4 = 10;
+    boolean isRain = (i2 % i1 ==0 || i3 % i1==0) && i2% i1 == 0;  /// || = +   && = *
+    // A || B && C
+    // 1. B&&C
+    // 2. A || (1)
+    // (A || B) && C
+    // 1. A || B
+    // 2. (1) && C
 }
