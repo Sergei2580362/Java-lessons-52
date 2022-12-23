@@ -10,6 +10,8 @@ public class Hmw2112 {
         //         1) Необходимо, чтоб программа выводила на экран вот такую последовательность:
         //         7 14 21 28 35 42 49 56 63 70 77 84 91 98
 
+        System.out.println("------");
+        System.out.println("Task 1");
         int i = 7;
         int sum = 0;
         while (sum < 98) {
@@ -24,6 +26,8 @@ public class Hmw2112 {
         //         будет считать количество введенных чисел, и переменную, которая будет накапливать общую
         //         сумму чисел.
 
+        System.out.println("------");
+        System.out.println("Task 2");
         Scanner scanner = new Scanner(System.in);
         int a;
         int sum1 = 0;
@@ -40,6 +44,8 @@ public class Hmw2112 {
         //         3) Необходимо суммировать все нечётные целые числа в диапазоне, который введёт пользователь
         //         с клавиатуры.  Например от 10 до 100
 
+        System.out.println("------");
+        System.out.println("Task 3");
         Scanner scanner2 = new Scanner(System.in);
         int num1 = scanner2.nextInt();
         int num2 = scanner2.nextInt();
@@ -57,20 +63,27 @@ public class Hmw2112 {
         //         4)Создать программу, выводящую на экран случайно сгенерированное трёхзначное натуральное
         //         число и его наибольшую цифру.
 
+        System.out.println("------");
+        System.out.println("Task 4");
         Random random = new Random();
         int num3 = random.nextInt(100, 999);
         System.out.println(num3);
         int figure;
+        int max = 0;
         while (num3 > 0) {
             figure = num3 % 10;
-            System.out.println(figure);
             num3 = num3 / 10;
-            // ДАЛЬШЕ НЕ ЗНАЮ КАК...
+            if (figure > max) {
+                max = figure;
+            }
+            System.out.println(max);
         }
 
         //         5) Для введённого пользователем с клавиатуры натурального числа посчитайте сумму всех его
         //         цифр (заранее не известно сколько цифр будет в числе).
 
+        System.out.println("------");
+        System.out.println("Task 5");
         Scanner scanner3 = new Scanner(System.in);
         int num4 = scanner3.nextInt();
         int sum3 = 0;
