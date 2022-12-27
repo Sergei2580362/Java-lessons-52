@@ -3,7 +3,7 @@ package Lessons.Lesson12;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Task2 {
+public class ArraySort {
     public static void main(String[] args) {
         String[] str = new String[10];
         str[5] = "fsd";

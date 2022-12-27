@@ -1,4 +1,4 @@
-package Homeworks.Homework10;
+package Homeworks.Homework11;
 
 import java.util.Random;
 import java.util.Scanner;
